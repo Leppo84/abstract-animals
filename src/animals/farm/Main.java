@@ -27,6 +27,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		MoveAnimal ma = new MoveAnimal();		
 		Dog rex = new Dog();
 		System.out.println("Cane: ");
 		rex.sound();
@@ -60,12 +61,16 @@ public class Main {
 
 		
 		if (command.equals("d")) {
-			willy.swim();
+			ma.letSwim(willy);
 		}
-		if (command.equals("a")) {
+		else if (command.equals("a")) {
+			ma.letFly(fiona);
+
 			fiona.fly();
 		}
-		if (command.equals("p")) {
+		else if (command.equals("p")) {
+			ma.letFly(titti);
+
 			titti.fly();
 		}
 		else {
