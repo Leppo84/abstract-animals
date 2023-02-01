@@ -1,6 +1,6 @@
 package animals.farm;
 
-public class Sparrow extends Animale {
+public class Sparrow extends Animale implements Flyer {
 
 	@Override
 	public void sound() {
@@ -10,6 +10,11 @@ public class Sparrow extends Animale {
 	@Override
 	public void eat() {
 		System.out.println("Seeds");
+	}
+
+	@Override
+	public void fly() {
+		System.out.println("The sparrow is flying");
 	}
 	
 }
